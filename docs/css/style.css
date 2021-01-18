@@ -1,0 +1,479 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "roboto";
+    font-size: 13px;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+p{
+    color: black;
+}
+header{
+    padding: 15px 0;
+    /*al ponerle "position: fixed" hacemos que el elemento quede fijado en pantalla
+    y a medida que vayamos scrolleando se mantendra en la posision que le asignemos*/
+    position: fixed;
+    /*con "top", "left" y "z-index" hacemos que el elemento se posicione
+    si quisieramos asignarle otra posicion modificamos los valores*/
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /*con "width" le asignamos un ancho a nuestro contenedor, de lo contrario, tomara
+    el valor de su padre que es "width: 1140px;" ya que fue asignado en la clase container*/
+    width: 100%;
+    background-color: white;
+}
+header .container .hamb{
+    display: none;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 60px;
+}
+footer .barra-footer{
+    background-color: grey;
+    text-align: center;
+    padding: 20px 15px 20px 15px;
+}
+footer ul{
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}     
+footer ul li{
+    margin-bottom: 10px;
+}
+footer .logo-footer{
+    width: 100%;
+}
+footer p{
+    color: white;
+    margin-bottom: 20px;
+}
+footer a{
+    color: white;
+}
+footer .redes.images{
+    display: flex;
+}
+footer .images img{
+    width: 30px;
+    height: 30px;
+    justify-content: space-between;
+    margin-right: 5px;
+    filter: grayscale(1);
+}
+footer .images img:hover{
+    width: 30px;
+    height: 30px;
+    justify-content: space-between;
+    margin-right: 5px;
+    filter: grayscale(0);
+}
+/*footer a img{
+    padding-right: 5px;
+}*/
+footer a img:nth-child(3){
+    padding-right: 0px;
+}
+.boton{
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+.boton.boton-rojo{
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 8px;
+    padding: 10px 13px;
+}
+.boton.boton-rojo:hover{
+    color: red;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 13px;
+    border: 1px solid red;
+}
+/*esta ruta modifica las caracteristicas de los botones en las CARD de "servicios"*/
+.boton.boton-blanco{
+    color: red;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid red;
+    padding: 10px 13px;
+}
+.boton.boton-blanco:hover{
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 8px;
+    border: 1px solid red;
+    padding: 10px 13px;
+}
+.seccion{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+header .container{
+    /*la siguente propiedad hace que los elementos hijos sean flexibles 
+    y puedan ser acomodades de forma diferente en el espacio*/
+    display: flex;
+    /*la siguiente propiedad alinea los elementos en base al eje "X"*/
+    justify-content: space-between;
+    /*la siguiente propiedad alinea los items con respecto al eje "Y"*/
+    align-items: center;
+}
+header .container .logo{
+    width: 100px;
+}
+header .container nav a{
+    color: red;
+    /*la siguiente propiedad le quita la linea a las etiquetas "a"*/
+    text-decoration: none;
+    /*la siguiente propiedad genera un espacio hacia afuera del elemento*/
+    margin: 0 15px;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    /*la siguiente propiedad genera un espacio hacia adentro del elemento*/
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+.container-fluid{
+    width: 100;
+    /*la siguiente propiedad genera un espacio hacia adentro del elemento*/
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+.row{
+    display: flex;
+    /*flex-wrap: wrap no indica que si alguna de las columnas por su ancho no llega a entrar 
+    dentro del disco en clase row quiere decir que esa columna se ira hacia abajo*/
+    flex-wrap: wrap;
+    /*mediante el atributo "margin" le quitamos el margen de los lados a este container en especifico*/
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.columna{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.columna-33{
+    width: 33.33%;
+}
+.columna-25{
+    width: 25%;
+}
+#inicio{
+    /*position relative hace que el elemento te da la opcion de poder mover el elemento
+    a partir de 5 propiedades diferentes (top,boton,right,left,Z-index)*/
+    position: relative;
+    /*usando esas 5 propiedades puedo colocar el elemento donde quiera y el 
+    el lugar reservado para este se mantiene*/
+    /*si le asigno a un elemento "posicion absoluta" y luego lo muevo usando las 5 propiedades 
+    el espacio que ocupaba el elemento se pierde y el elemento queda fotando sobre los otros 
+    elementos, ya que estos se acomodan como si el elemento no estuviera*/
+}
+#inicio img{
+    width: 100%;
+    display: block;
+}
+#inicio .bloque-inicio{
+    /*la posicion absoluta solo va a funcionar bien solo si esta dentro de otro elemento
+    que tambien sea posicion relativa o absoluta*/
+    position: absolute;
+    /*la siguiente etiqueta mueve el elemento con respecto al eje "X"*/
+    top: 40%;
+    /*la siguiente etiqueta mueve el elemento con respecto al eje "Y"*/
+    left: 50%;
+    /*la siguiente equiteta le asigna un ancho fijo al alemento*/
+    width: 600px;
+    /*la siguiente etiqueta le da posicion con respecto al eje "Y" a todos
+    los elementos que sean de tipo inline*/
+    text-align: center;
+    /*vale aclarar el el atributo margin puede trabajar con valores en "porcentajes(%)"
+    "pixeles(px)" y tambien valores negativos de "pixeles"*/
+    margin-left: -300px;
+}
+#inicio .bloque-inicio h1{
+    color: white;
+    font-size: 35px;
+}
+#inicio .bloque-inicio p{
+    color: white;
+    font-size: 16px;
+}
+#nosotros{
+    background-image: url(../images/latas.jpg);
+    background-size: cover;
+}
+#nosotros p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    /*margin: 0*/
+}
+/*con estos atributos vamos a determinar la forma de la imagen que va a esta contenida
+dentro del CARD, para que la misma siempre mantenga su forma, sin importar el contenido
+del resto del CARD*/
+.cuadrado-perfecto{
+    width: 100%;
+    /*a continuacion, mediante el atributo "padding-bottom" le asignamos un alto determinado al
+    cuadrado perfecto. indicandole que ocuparia todo el alto del mismo*/
+    padding-bottom: 100%;
+    position: relative;
+}
+.cuadrado-perfecto img{
+    /*una vez que le asignamos un tamaño al cuadrado perfecto podemos hacerlo con la imagen*/
+    width: 100%;
+    height: 100%;
+    /*la siguiente propiedad solo funciona para etiquetas img y video. y su funcion es muy similar
+    a "backgroumd-size" ya que tiene el valor cover*/
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#servicios .bloque-servicio{
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+#servicios .bloque-servicio .bloque-img-servicio img{
+    width: 100%;
+}
+#servicios .bloque-servicio .bloque-img-servicio.cuadrado-perfecto{
+    padding-bottom: 56.25%;
+    
+}
+#servicios .bloque-servicio .bloque-contenido-servicio{
+    padding: 15px;
+}
+#servicios .bloque-servicio .bloque-contenido-servicio h3{
+    margin-top: 0px;
+    font-size: 25px;
+}
+#galeria h4{
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+#galeria img{
+    filter: grayscale(0.86);
+}
+#galeria .cuadrado-perfecto:hover img{
+    filter: grayscale(0);
+}
+#galeria .cuadrado-perfecto:hover h4{
+    display: none;
+}
+#contactenos{
+    position: relative;
+}
+#contactenos iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 
+#contactenos form{
+    padding: 30px;
+    background-color: red;
+}
+#contactenos form .form-block{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#contactenos form .form-block .form-control{
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+}
+#contactenos form .form-block textarea{
+    display: block;
+    height: 100px;
+    font-size: 16px;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+}
+.columna-41{
+    width: 41.66%;
+}
+.empujar-58{
+    margin-left: 58.33%;
+}
+#contactenos form .form-block.ultimo-bloque{
+    margin-bottom: 0;
+}
+.boton.boton-negro{
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 8px;
+    padding: 10px 13px;
+    border: none;
+}
+.boton.boton-negro:hover{
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 13px;
+    border: none;
+}
+/*aca empezamos a renderizar todo para que sea responsive*/
+@media(max-width:767px)
+{
+    body{
+        font-size: 15px;
+    }
+    footer{
+        text-align: center;
+    }
+    footer .logo-footer{
+        width: 65%;
+    }
+    header .ancho-mobile{
+        width: 500px;
+    }
+    header .container nav{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        /*transition le indica la forma en la que un elemento pasa de un estado "a" a un estado "b"*/
+        /*el primer valor indica los elementos que se van a ver afectados por "transition"*/
+        /*el segundo valor indica el tiempo de la transicion*/
+        /*y el tercero indica el tipo de transicion*/
+        transition: all 0.4 ease;
+        /*con esta propiedad le indicamos al elemento que se translade con respecto al "eje x"*/
+        /*al ponerle un valor de 100% hacemos que salga fuera del "viewport"*/
+        transform: translateX(100%);
+    }
+    header .container nav.open{
+        transform: translateX(0);
+    }
+    header .container nav a{
+        font-size: 30px;
+        margin: 15px 0px;
+    }
+    header .container .hamb{
+        display: block;
+        font-size: 40px;
+        color: red;
+    }
+    header .container .hamb img{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    #inicio p{
+        text-align: center;
+        width: 80vh;
+    }
+    #inicio .banner-mobile{
+        height: 50vh;
+    }
+    #inicio .bloque-inicio-mobile{
+        width: 500px;
+    }
+    #inicio .bloque-inicio-mobile h1{
+        width: 80vh;
+        text-align: center;
+    }
+    #inicio a{
+        text-align: center;
+        margin-left: 16.5%;
+    }
+    form .boton.boton-negro{
+        width: 100%;
+    }
+    form .boton.boton-negro:hover{
+        width: 100%;
+        color: black;
+        font-weight: bold;
+        background-color: white;
+        border-radius: 8px;
+        padding: 10px 13px;
+        border: none
+    }
+    .container{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #inicio{
+        height: 100vh;
+    }
+    #inicio img{
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+    #inicio{
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+    .columna-mobile-100{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .columna-mobile-50{
+        width: 50%;    
+    }
+    .empujar-mobile-0{
+        margin-left: 0px;
+    }
+    .empujar-mobile-40{
+        margin-left: 0;
+        padding-left: 40%;
+    }
+    .empujar-mobile-10{
+        padding-right: ;
+    }
+    #contactenos{
+        padding: 0px;
+    }
+    .sin-padding-mobile{
+        padding: 0px;
+    }
+    #contactenos iframe{
+        position: relative;
+        height: 38vh;
+    }
+}

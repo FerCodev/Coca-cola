@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="pagina realizada a partir de un curso gratuito encontrado en facebook">
+    <meta name="keywords" content="fernando, montes de oca, develofer, desarrollador, developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!--aca colocamos la google font Roboto-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--aca termina la fuente y empieza el estilado css-->
+    <!--primero colocamos el normalize-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--aca van los estilos creados por mi-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Truchi-cola</title>
+</head>
+<body>
+    <header class="ancho-mobile">
+        <div class="container">
+            <a href="https://kroower.github.io/Coca-Cola/" target="_blank">
+                <img src="images/logo.svg" alt="" class="logo columna-mobile-50">
+            </a>
+            <nav>
+                <a href="#inicio">inicio</a>
+                <a href="#galeria">galeria</a>
+                <a href="#servicios">servicios</a>
+                <a href="#nosotros">nosotros</a>
+                <a href="#contactanos">coctactanos</a>
+            </nav>
+            <a href="https://kroower.github.io/Coca-Cola/" target="_blank" class="hamb columna-mobile-50 empujar-mobile-40"><img src="images/hamb.svg" alt=""></a>
+        </div>
+         
+    </header>
+    <main>
+        <section id="inicio">
+            <img src="images/bannerprincipal.jpg" class="banner-mobile" alt="banner-principal">
+            <div class="bloque-inicio bloque-inicio-mobile">
+                <h1>bienvenidos a Truchi-Cola</h1>
+                <p>esta es una pagina creada bajo <br>
+                    las instrucciones de un curso, tomando <br>
+                    como referencia una reconocida <br>
+                    marca de bebida gaseosa. <br>
+                </p>
+                <a href="https://kroower.github.io/Coca-Cola/" target="_blank" class="boton boton-rojo boton-rojo-mobile">ver mas</a>
+            </div>
+        </section>
+        <section id="nosotros" class="seccion">
+            <div class="container">
+                <p>este es un texto de muestra, sin ningun sentido aparente y con 
+                    unica funcion de rellenar un espacio y mostarle al visitante de 
+                    la pagina como se vera el texto.
+                </p>
+            </div>
+        </section>
+        <section id="servicios" class="seccion">
+            <div class="container">
+                <div class="row"> <!--si nosotros queremos que las columnas se coloquen una al lado
+                de otra, tenemos que utilizar flex, para poder optimizar la ubicacion de los elementos-->
+                    <div class="columna columna-33 columna-mobile-100">
+                        <div class="bloque-servicio">
+                            <div class="bloque-img-servicio cuadrado-perfecto">
+                                <img src="images/servicio1.jpg" alt="servicio-1">
+                            </div>
+                            <div class="bloque-contenido-servicio">
+                                <h3>Servicio 1</h3>
+                                <p>este es un texto de muestra, sin ningun sentido aparente y con 
+                                    unica funcion de rellenar un espacio y mostarle al visitante de 
+                                    la pagina como se vera el texto.
+                                </p>
+                                <a href="https://kroower.github.io/Coca-Cola/" target="_blank" class="boton boton-blanco">ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columna columna-33 columna-mobile-100">
+                        <div class="bloque-servicio">
+                            <div class="bloque-img-servicio cuadrado-perfecto">
+                                <img src="images/servicio2.jpg" alt="servicio-2">
+                            </div>
+                            <div class="bloque-contenido-servicio">
+                                <h3>Servicio 2</h3>
+                                <p>este es un texto de muestra, sin ningun sentido aparente y con 
+                                    unica funcion de rellenar un espacio y mostarle al visitante de 
+                                    la pagina como se vera el texto.
+                                </p>
+                                <a href="https://kroower.github.io/Coca-Cola/" target="_blank" class="boton boton-blanco">ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columna columna-33 columna-mobile-100">
+                        <div class="bloque-servicio">
+                            <div class="bloque-img-servicio cuadrado-perfecto">
+                                <img src="images/servicio3.jpg" alt="servicio-3">
+                            </div>
+                            <div class="bloque-contenido-servicio">
+                                <h3>Servicio 3</h3>
+                                <p>este es un texto de muestra, sin ningun sentido aparente y con 
+                                    unica funcion de rellenar un espacio y mostarle al visitante de 
+                                    la pagina como se vera el texto.
+                                </p>
+                                <a href="https://kroower.github.io/Coca-Cola/" target="_blank" class="boton boton-blanco">ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--el elemento seccion es un elemento de tipo bloque-->
+        <section id="galeria">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="columna-33 columna-mobile-50">
+                        <div class="cuadrado-perfecto">
+                            <!--el elemento img es de tipo "inline"-->
+                            <img src="images/servicio1.jpg" alt="">
+                            <h4>imagen 1</h4>
+                        </div>
+                    </div>
+                    <div class="columna-33 columna-mobile-50">
+                        <div class="cuadrado-perfecto">
+                            <img src="images/servicio3.jpg" alt="">
+                            <h4>imagen 2</h4>
+                        </div>
+                    </div>
+                    <div class="columna-33 columna-mobile-50">
+                        <div class="cuadrado-perfecto">
+                            <img src="images/servicio2.jpg" alt="">
+                            <h4>imagen 3</h4>
+                        </div>
+                    </div>
+                    <div class="columna-33 columna-mobile-50">
+                        <div class="cuadrado-perfecto">
+                            <img src="images/servicio3.jpg" alt="">
+                            <h4>imagen 4</h4>
+                        </div>
+                    </div>
+                    <div class="columna-33 columna-mobile-50">
+                        <div class="cuadrado-perfecto">
+                            <img src="images/servicio2.jpg" alt="">
+                            <h4>imagen 5</h4>
+                        </div>
+                    </div>
+                    <div class="columna-33 columna-mobile-50">
+                        <div class="cuadrado-perfecto">
+                            <img src="images/servicio1.jpg" alt="">
+                            <h4>imagen 6</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contactenos" class="seccion">
+            <iframe width="520" height="520" frameborder="0" scrolling="no" marginheight="0" 
+            marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp; 
+            height=400&amp;hl=en&amp;q=%20Quilmes+()&amp;t=&amp;
+            z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+            <div class="container-fluid">
+                <div class="row">
+                    <!--aca vamos a configurar varias clases mobile para establecer los media-queries-->
+                    <div class="columna columna-41 columna-mobile-100 empujar-58 empujar-mobile-0 
+                    sin-padding-mobile">
+                        <form action="" method="POST">
+                            <div class="form-block">
+                                <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="form-block">
+                                <input type="email" name="email" class="form-control" placeholder="e-mail">
+                            </div>
+                            <div class="form-block">
+                                <textarea name="mensaje" id="" placeholder="Mensaje"></textarea>
+                            </div>
+                            <div class="form-block ultimo-bloque">
+                                <input type="submit" class="boton boton-negro" value="enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> 
+        <div class="container">
+            <div class="row">
+                <div class="columna-25 columna-mobile-100">
+                    <img src="images/logo-blanco.png" alt="logo-blanco" class="logo-footer">
+                    <p>este es un texto de muestra, sin ningun sentido aparente y con 
+                        unica funcion de rellenar un espacio y mostarle al visitante de 
+                        la pagina como se vera el texto.
+                    </p>
+                </div>
+                <div class="columna-25 columna-mobile-100">
+                    <h3>temas relacionados</h3>
+                    <ul>
+                        <li><a href="#">tema 1</a></li>
+                        <li><a href="#">tema 2</a></li>
+                        <li><a href="#">tema 3</a></li>
+                    </ul>
+                </div>
+                <div class="columna-25 columna-mobile-100">
+                    <h3>mis datos</h3>
+                    <ul>
+                        <li>fernano.proff@hotmail.com</li>
+                        <li>+5491154751721</li>
+                        <li>av. develofer 747 - Rio femdo Italia</li>
+                    </ul>
+                </div>
+                <div class="columna-25 columna-mobile-100">
+                    <!--<h3>Redes Sociales</h3>
+                    <ul class="redes">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                        </li>
+                    </ul>-->
+                    <div class="redes">
+                        <h3>redes sociales</h3>
+                        <div class="images">
+                        <a href="https://kroower.github.io/Coca-Cola/" target="_blank"><img src="images/facebook.svg" alt="facebook"></a>
+                        <a href="https://kroower.github.io/Coca-Cola/" target="_blank"><img src="images/instagram.svg" alt="instagram"></a>
+                        <a href="https://kroower.github.io/Coca-Cola/" target="_blank"><img src="images/email.svg" alt="email"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer">
+            &copy; Derechos Reservados - 2020
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
