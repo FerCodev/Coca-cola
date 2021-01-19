@@ -343,10 +343,19 @@ del resto del CARD*/
     border: none;
 }
 /*aca empezamos a renderizar todo para que sea responsive*/
-@media(max-width:767px)
+@media only screen and (min-width: 324px) and (max-width: 736px) 
+/*@media (max-width:767px) and (min-width: 350px)*/
 {
     body{
         font-size: 15px;
+        width: 100vh;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    header{
+        display: flex;
+        width: 100vh;
     }
     footer{
         text-align: center;
@@ -354,9 +363,10 @@ del resto del CARD*/
     footer .logo-footer{
         width: 65%;
     }
-    header .ancho-mobile{
+    /*header .ancho-mobile{
         width: 500px;
-    }
+        margin-right: 0;
+    }*/
     header .container nav{
         position: fixed;
         width: 100%;
@@ -392,42 +402,32 @@ del resto del CARD*/
         font-size: 40px;
         color: red;
     }
-    header .container .hamb img{
+    header .hamb img{
         width: 30px;
         height: 30px;
         position: relative;
-        top: 0;
-        right: 0;
+        float: right;
+        margin-right: 30px;
     }
     #inicio p{
         text-align: center;
         width: 80vh;
     }
     #inicio .banner-mobile{
-        height: 65vh;
+        height: 50vh;
     }
-    #inicio .bloque-inicio-mobile{
+    /*#inicio .bloque-inicio-mobile{
         width: 500px;
-    }
+    }*/
     #inicio .bloque-inicio-mobile h1{
-        width: 80vh;
         text-align: center;
     }
     #inicio a{
         text-align: center;
-        margin-left: 16.5%;
+        margin-left: 0;
     }
     form .boton.boton-negro{
         width: 100%;
-    }
-    form .boton.boton-negro:hover{
-        width: 100%;
-        color: black;
-        font-weight: bold;
-        background-color: white;
-        border-radius: 8px;
-        padding: 10px 13px;
-        border: none
     }
     .container{
         width: 100%;
@@ -449,6 +449,11 @@ del resto del CARD*/
         object-position: center;
         object-fit: cover;
     }
+    #nosotros p{
+        width: 80vh;
+        text-align: center;
+        margin-left: 10vh;
+    }
     .columna-mobile-100{
         width: 100%;
         margin-bottom: 10px;
@@ -459,13 +464,10 @@ del resto del CARD*/
     .empujar-mobile-0{
         margin-left: 0px;
     }
-    .empujar-mobile-40{
+    /*.empujar-mobile-40{
         margin-left: 0;
         padding-left: 40%;
-    }
-    .empujar-mobile-10{
-        padding-right: ;
-    }
+    }*/
     #contactenos{
         padding: 0px;
     }
