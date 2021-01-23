@@ -386,7 +386,8 @@ del resto del CARD*/
     }
     header .container nav a{
         font-size: 30px;
-        margin: 15px 0px;
+        margin-top: 15px;
+        margin-bottom: 50px;
     }
     header .container .hamb{
         display: block;
@@ -413,7 +414,7 @@ del resto del CARD*/
         margin-right: 0px;
     }
     #inicio .banner-mobile{
-        height: 60vh;
+        height: 70vh;
         width: 100%;
     }/*
     #inicio .bloque-inicio-mobile{
