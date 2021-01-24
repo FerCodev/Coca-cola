@@ -75,9 +75,6 @@ footer .images img:hover{
     margin-right: 5px;
     filter: grayscale(0);
 }
-/*footer a img{
-    padding-right: 5px;
-}*/
 footer a img:nth-child(3){
     padding-right: 0px;
 }
@@ -353,10 +350,7 @@ del resto del CARD*/
     }
     footer .logo-footer{
         width: 65%;
-    }/*
-    header .ancho-mobile{
-        width: 500px;
-    }*/
+    }
     header .container{
         justify-content: space-between 0px;
     }
@@ -403,8 +397,7 @@ del resto del CARD*/
         height: 30px;
         position: relative;
         top: 0px;
-        right: 40px;
-        margin-right: 40px;
+        right: 10px;
         float: right;
     }
     #inicio p{
@@ -414,12 +407,9 @@ del resto del CARD*/
         margin-right: 0px;
     }
     #inicio .banner-mobile{
-        height: 90vh;
+        height: 65vh;
         width: 100%;
-    }/*
-    #inicio .bloque-inicio-mobile{
-        width: 500px;
-    }*/
+    }
     #inicio .bloque-inicio-mobile h1{
         width: 100%;
         text-align: center;
@@ -427,11 +417,12 @@ del resto del CARD*/
     #inicio .bloque-inicio.bloque-inicio-mobile{
         width: 100%;
         position: absolute;
-        top: 40%;
+        top: 25%;
         left: 0;
         align-items: center;
         margin-right: 0;
         margin-left: 0;
+        height: 40%;
     }
     #inicio a{
         text-align: center;
@@ -442,6 +433,13 @@ del resto del CARD*/
     #nosotros .container p{
         width: 80%;
         margin-left: 10%;
+    }
+    #contactenos .seccion{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
     form .boton.boton-negro{
         width: 100%;
@@ -469,9 +467,29 @@ del resto del CARD*/
     .columna-mobile-100{
         width: 100%;
         margin-bottom: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #galeria .container-fluid{
+        margin-right: 0%;
+        margin-left: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .container-fluid{
+        margin-right: 0%;
+        margin-left: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
     .columna-mobile-50{
-        width: 50%;    
+        width: 50%; 
+        margin-left: 0px;
+        margin-right: 0px;   
+        padding-right: 0%;
+        padding-left: 0%;
     }
     .empujar-mobile-0{
         margin-left: 0px;
@@ -484,7 +502,18 @@ del resto del CARD*/
         padding: 0px;
     }
     .sin-padding-mobile{
-        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;   
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    .row.row-mobile{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;   
+        padding-right: 0%;
+        padding-left: 0%;
+        
     }
     #contactenos iframe{
         position: relative;
