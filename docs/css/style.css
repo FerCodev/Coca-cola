@@ -340,7 +340,7 @@ del resto del CARD*/
     border: none;
 }
 /*aca empezamos a renderizar todo para que sea responsive*/
-@media screen and (max-width:767px) and (min-width:324px)
+@media screen and (min-width:240px) and (max-width:767px) 
 {
     body{
         font-size: 15px;
